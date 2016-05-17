@@ -1,6 +1,7 @@
 /* This is a bit better than setting border-box everywhere */
 html {
   box-sizing: border-box;
+  font-family: helvetica;
 }
 *, *::before, *::after {
   box-sizing: inherit;
