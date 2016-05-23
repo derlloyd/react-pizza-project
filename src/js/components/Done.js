@@ -9,11 +9,12 @@ var Done = React.createClass({
         <div>
             <h1>DONE: return all info and confirm</h1>
             
+            <button className="btn btn-primary">Place order</button>
+            
         </div>
         )
 
     }
 
 })
-
 module.exports = Done;

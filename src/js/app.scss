@@ -1,0 +1,37 @@
+
+
+
+
+/* This is a bit better than setting border-box everywhere */
+html {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+.main-footer {
+  clear: left;
+	width: 100%;
+	background: #ccc;
+	text-align: center;
+	padding: 4px 0;
+}
+
+nav {
+  color: red;
+  
+}
+
+
+
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+// 	float: left;
+	width: 100%;
+  
+}

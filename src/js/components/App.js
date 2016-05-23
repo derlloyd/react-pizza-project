@@ -9,7 +9,7 @@ var Navigation = React.createClass({
   render: function() {
     return (
       <nav className="main-menu">
-        <ul>
+        <ul className="nav nav-pills">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -17,13 +17,16 @@ var Navigation = React.createClass({
             <Link to="/order">Order</Link>
           </li>
           <li>
-            <Link to="/choose">Choose</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
-            <Link to="/custom">Custom</Link>
+            <Link to="/reviews">Reviews</Link>
           </li>
           <li>
-            <Link to="/done">Done</Link>
+            <Link to="/twitter">Tweet</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </nav>
@@ -38,8 +41,10 @@ var App = React.createClass({
     return (
       <main>
         <Navigation/>
-    
+        
         {this.props.children}
+        
+        <footer className="main-footer">Pizza Palace 2016</footer>
       </main>
     );
   }

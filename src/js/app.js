@@ -10,11 +10,17 @@ var browserHistory = ReactRouter.browserHistory;
 
 var App = require('./components/App')
 var Home = require('./components/Home')
+var About = require('./components/About')
+var Contact = require('./components/Contact')
+var Reviews = require('./components/Reviews')
 var Order = require('./components/Order')
 var Choose = require('./components/Choose')
 var Custom = require('./components/Custom')
 var Done = require('./components/Done')
+var TweetBox = require('./components/Twitter')
 var NotFound = require('./components/NotFound')
+
+require('./app.scss')
 
 
 /*
@@ -38,6 +44,10 @@ var routes = (
       <Route path="choose" component={Choose}/>
       <Route path="custom" component={Custom}/>
       <Route path="done" component={Done}/>
+      <Route path="about" component={About}/>
+      <Route path="contact" component={Contact}/>
+      <Route path="reviews" component={Reviews}/>
+      <Route path="twitter" component={TweetBox}/>
       <Route path="*" component={NotFound}/>
     </Route>
   </Router>
